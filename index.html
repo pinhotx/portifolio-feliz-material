@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./css/custom.css">
 
 </head>
@@ -15,24 +16,38 @@
 
     <header>
 
-        <nav>
-            <div class="nav-wrapper teal">
-                <ul id="nav-mobile" class="right hide-on-small-only">
-                    <li><a href="#">Sobre mim</a></li>
-                    <li><a href="#">Conhecimentos</a></li>
-                    <li><a href="#">Experiência</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-            </div>
-        </nav>
+        <div class="navbar-fixed">
+            <nav>
+                <a href="#" data-target="slide-out" class="sidenav-trigger hide-on-med-and-up"><i
+                        class="material-icons">menu</i></a>
+                <div class="nav-wrapper purple darken-3">
+                    <ul id="nav-mobile" class="right hide-on-small-only">
+                        <li><a href="#aboutme">Sobre mim</a></li>
+                        <li><a href="#knowledge">Conhecimentos</a></li>
+                        <li><a href="#experience">Experiência</a></li>
+                        <li><a href="#portifolio">Portfolio</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+
+        <ul id="slide-out" class="purple darken-3 sidenav">
+            <li><a class="white-text sidenav-close" href="#aboutme">Sobre mim</a></li>
+            <li><a class="white-text sidenav-close" href="#knowledge">Conhecimentos</a></li>
+            <li><a class="white-text sidenav-close" href="#experience">Experiência</a></li>
+            <li><a class="white-text sidenav-close" href="#portifolio">Portfolio</a></li>
+            <li><a class="white-text sidenav-close" href="#contact">Contato</a></li>
+        </ul>
+
 
     </header>
     <main>
         <section class="black">
             <div class="carousel carousel-slider center">
                 <div class="carousel-fixed-item center">
-                    <a class="btn waves-effect teal darken-2">Meus trabalhos</a>
+                    <a class="btn waves-effect purple darken-3">Meus trabalhos</a>
                 </div>
                 <div class="carousel-item red white-text" href="#one!">
                     <h2>First Panel</h2>
@@ -45,16 +60,33 @@
             </div>
         </section>
 
-        <section class="container">
-            <h3>Sobre mim</h3>
+        <section id="aboutme" class="grey lighten-5">
+            <div class="container row">
+                <div class="col m4 hide-on-med-and-down">
+                    <img id="profile-picture" class="responsive-img" src="./assets/foto.jpg" alt="">
+                </div>
+                <div class="col l8 s12 ">
+                    <h5 class="teal-text">Sobre mim</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi aspernatur eum possimus ipsa quam
+                        consequatur dolore saepe doloremque quod numquam ex vitae, magni corrupti delectus a aliquam
+                        tempora. Sapiente, possimus!</p>
+
+                    <h5 class="teal-text">Mais Informações</h5>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate quia in recusandae omnis
+                        veniam, amet obcaecati maiores ullam pariatur blanditiis sint minus, a dolorem, veritatis iure
+                        quasi architecto optio totam.</p>
+                </div>
+            </div>
         </section>
 
-        <section class="container">
+        <section id="knowledge" class="container">
             <h5 class="teal-text">Conhecimentos</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dolor odio non esse voluptatem, consectetur,
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dolor odio non esse voluptatem, consectetur,
                 soluta culpa excepturi, mollitia cumque tempora nam eum officia numquam optio officiis aperiam
-                dignissimos quisquam!</p>
+                dignissimos quisquam!
 
+            </p>
             <h6>HTML5</h6>
             <div class="progress">
                 <div class="determinate" style="width: 10%"></div>
@@ -69,23 +101,51 @@
             </div>
         </section>
 
-        <section class="teal white-text">
+        <section id="experience" class="teal white-text">
             <div class="container">
                 <h5>Experiência</h5>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde est, commodi eligendi optio at
                     voluptatibus aliquid, modi, a iusto quasi similique fugiat dignissimos ratione voluptates dolor iste
                     voluptas. Dolorum, ipsa.</p>
+
+                <div class="row">
+                    <div class="col s12 m6 l3">
+                        <img class="responsive-img" src="./assets/cocaCola.jpg" alt="">
+                    </div>
+                    <div class="col s12 m6 l3">
+                        <img class="responsive-img" src="./assets/facebook.jpg" alt="">
+                    </div>
+                    <div class="col s12 m6 l3">
+                        <img class="responsive-img" src="./assets/google.jpg" alt="">
+                    </div>
+                    <div class="col s12 m6 l3">
+                        <img class="responsive-img" src="./assets/microsoft.jpg" alt="">
+                    </div>
+                </div>
             </div>
+
         </section>
 
-        <section class="container">
+        <section id="portifolio" class="container">
             <h5>Portfólio</h5>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, provident, ipsa nostrum illo officia,
                 aliquam at molestias omnis sint reiciendis sed eos sapiente libero? Vitae asperiores veritatis incidunt
                 fugiat numquam?</p>
+            <div class="row">
+                <div class="col s12 m6 l3"><img src="./assets/portofolio01.jpg" alt="" class="responsive-img"></div>
+                <div class="col s12 m6 l3"><img src="./assets/portofolio02.jpg" alt="" class="responsive-img"></div>
+                <div class="col s12 m6 l3"><img src="./assets/portofolio03.jpg" alt="" class="responsive-img"></div>
+                <div class="col s12 m6 l3 hide-on-small-only"><img src="./assets/portofolio04.jpg" alt=""
+                        class="responsive-img"></div>
+                <div class="col s12 m6 l3"><img src="./assets/portofolio05.jpg" alt="" class="responsive-img"></div>
+                <div class="col s12 m6 l3 hide-on-small-only"><img src="./assets/portofolio06.jpg" alt=""
+                        class="responsive-img"></div>
+                <div class="col s12 m6 l3"><img src="./assets/portofolio07.jpg" alt="" class="responsive-img"></div>
+                <div class="col s12 m6 l3"><img src="./assets/portofolio08.jpg" alt="" class="responsive-img"></div>
+            </div>
         </section>
 
-        <section class="teal white-text">
+        <section id="contact" class="teal white-text">
             <div class="container">
                 <h5>Contato</h5>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis alias soluta similique deleniti esse
@@ -99,7 +159,18 @@
     <footer class="center">
         Copyright (c) 2023 Portfólio de Felipe Maciel
     </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+        $('.carousel.carousel-slider').carousel({
+            fullWidth: true, 
+            indicators: true
+        });
+    </script>
 </body>
 
 </html>
