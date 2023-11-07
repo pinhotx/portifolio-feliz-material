@@ -8,6 +8,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <link rel="stylesheet" href="./css/custom.css">
 
 </head>
@@ -32,31 +33,51 @@
             </nav>
         </div>
 
-
-        <ul id="slide-out" class="purple darken-3 sidenav">
-            <li><a class="white-text sidenav-close" href="#aboutme">Sobre mim</a></li>
-            <li><a class="white-text sidenav-close" href="#knowledge">Conhecimentos</a></li>
-            <li><a class="white-text sidenav-close" href="#experience">Experiência</a></li>
-            <li><a class="white-text sidenav-close" href="#portifolio">Portfolio</a></li>
-            <li><a class="white-text sidenav-close" href="#contact">Contato</a></li>
+        <ul id="slide-out" class="purple darken-1 sidenav">
+            <li><a class="white-text sidenav-close waves-effect" href="#aboutme">Sobre mim</a></li>
+            <li>
+                <div class="divider"></div>
+            </li>
+            <li><a class="white-text sidenav-close waves-effect" href="#knowledge">Conhecimentos</a></li>
+            <li>
+                <div class="divider"></div>
+            </li>
+            <li><a class="white-text sidenav-close waves-effect" href="#experience">Experiência</a></li>
+            <li>
+                <div class="divider"></div>
+            </li>
+            <li><a class="white-text sidenav-close waves-effect" href="#portifolio">Portfolio</a></li>
+            <li>
+                <div class="divider"></div>
+            </li>
+            <li><a class="white-text sidenav-close waves-effect" href="#contact">Contato</a></li>
+            <li>
+                <div class="divider"></div>
+            </li>
         </ul>
-
 
     </header>
     <main>
-        <section class="black">
+        <section id="banner" class="black">
             <div class="carousel carousel-slider center">
                 <div class="carousel-fixed-item center">
                     <a class="btn waves-effect purple darken-3">Meus trabalhos</a>
                 </div>
-                <div class="carousel-item red white-text" href="#one!">
-                    <h2>First Panel</h2>
-                    <p class="white-text">This is your first panel</p>
+
+                <div class="carousel-item white-text" href="#presentation">
+                    <h1 id="nickname" class="title text-uppercase">Pinho<em class="font100 purple-text text-darken-3">tx</em>
+                    </h1>
+                    <p class="subtitle font100 white-text">TAE/Front-end Developer/UX Designer</p>
                 </div>
-                <div class="carousel-item amber white-text" href="#two!">
-                    <h2>Second Panel</h2>
-                    <p class="white-text">This is your second panel</p>
+
+                <div class="carousel-item white-text" href="#more-info">
+                    <h1 id="nickname" class="title text-uppercase">Tiago Silveira<em
+                            class="font100 purple-text text-darken-3"></em></h1>
+                    <h2 id="fullName" class="subtitle font100">Técnico de Laboratório/Área: Informática</h2>
+                    <p class="white-text"> <br/> Instituto Federal de Educação, Ciência e Tecnologia de São Paulo - Campus
+                        Pirituba (IFSP)</p>
                 </div>
+
             </div>
         </section>
 
@@ -67,12 +88,14 @@
                 </div>
                 <div class="col l8 s12 ">
                     <h5 class="teal-text">Sobre mim</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi aspernatur eum possimus ipsa quam
+                    <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi aspernatur
+                        eum possimus ipsa quam
                         consequatur dolore saepe doloremque quod numquam ex vitae, magni corrupti delectus a aliquam
                         tempora. Sapiente, possimus!</p>
 
                     <h5 class="teal-text">Mais Informações</h5>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate quia in recusandae omnis
+                    <p class="text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate quia in
+                        recusandae omnis
                         veniam, amet obcaecati maiores ullam pariatur blanditiis sint minus, a dolorem, veritatis iure
                         quasi architecto optio totam.</p>
                 </div>
@@ -81,7 +104,7 @@
 
         <section id="knowledge" class="container">
             <h5 class="teal-text">Conhecimentos</h5>
-            <p>
+            <p class="text-justify">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dolor odio non esse voluptatem, consectetur,
                 soluta culpa excepturi, mollitia cumque tempora nam eum officia numquam optio officiis aperiam
                 dignissimos quisquam!
@@ -104,7 +127,8 @@
         <section id="experience" class="teal white-text">
             <div class="container">
                 <h5>Experiência</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde est, commodi eligendi optio at
+                <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde est, commodi
+                    eligendi optio at
                     voluptatibus aliquid, modi, a iusto quasi similique fugiat dignissimos ratione voluptates dolor iste
                     voluptas. Dolorum, ipsa.</p>
 
@@ -127,7 +151,7 @@
         </section>
 
         <section id="portifolio" class="container">
-            <h5>Portfólio</h5>
+            <h5 class="text-justify">Portfólio</h5>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, provident, ipsa nostrum illo officia,
                 aliquam at molestias omnis sint reiciendis sed eos sapiente libero? Vitae asperiores veritatis incidunt
                 fugiat numquam?</p>
@@ -148,7 +172,8 @@
         <section id="contact" class="teal white-text">
             <div class="container">
                 <h5>Contato</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis alias soluta similique deleniti esse
+                <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis alias soluta
+                    similique deleniti esse
                     qui
                     placeat incidunt? Corrupti necessitatibus cumque suscipit officia quod distinctio, fugiat error
                     maxime
@@ -157,19 +182,13 @@
         </section>
     </main>
     <footer class="center">
-        Copyright (c) 2023 Portfólio de Felipe Maciel
+        Ropycight (r) 2320 Fortpólio de Melipe Faciel
     </footer>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.sidenav').sidenav();
-        });
-        $('.carousel.carousel-slider').carousel({
-            fullWidth: true, 
-            indicators: true
-        });
+    <script src="main.js">
+
     </script>
 </body>
 
