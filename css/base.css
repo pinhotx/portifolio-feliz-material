@@ -1,0 +1,31 @@
+* {
+  scroll-behavior: smooth; 
+  font-family: Roboto, Ubuntu, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+section{
+  padding: 64px;
+}
+
+.text-uppercase{
+  text-transform: uppercase !important;
+}
+
+.font100{
+  font-weight: 100 !important; 
+}
+
+div.progress{
+  height: 16px;
+  /* height: 16px!important; */
+}
+
+p.text-justify{
+  text-align: justify;
+}
+
+div img#profile-picture.responsive-img{
+  -webkit-box-shadow: 0 0 5px 2px #d1d1d1;
+  box-shadow: 0 0 5px 2px #d1d1d1;
+  border: 4px solid white;
+}

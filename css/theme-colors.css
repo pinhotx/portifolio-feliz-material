@@ -1,0 +1,10 @@
+/* Cores do materialize para aplicação em regiões específicas do site 
+  * Path: css/theme-colors.css 
+  * Prefencialmente utilizar as classes de cor do materialize
+  * * Usar essas cores apenas dentro do custom.css em ultimos casos
+*/
+
+:root{
+  --main-purple: #6a1b9a;
+  --accent-pink: #ff80ab;
+}
