@@ -48,7 +48,7 @@ section#banner .subtitle{
 }
 
 .btn-floating:hover .bigger-on-hover.material-icons{
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
 
 ul#nav-dropdown.dropdown-content{
@@ -57,24 +57,28 @@ ul#nav-dropdown.dropdown-content{
     left: 0;
 }
 
+#bannerPreviousSlideButton i.bigger-on-hover.material-icons{
+    right: 0;
+}
+
 #bannerPreviousSlideButton:hover i.bigger-on-hover.material-icons{
     right: 1rem;
     position: relative;
 }
 
-footer a#copyrightLink :nth-child(2){
+footer a#copyrightLink :last-child{
     display: none;
     animation: fadeIn 0.5s ease;
+  }
+
+  footer:hover a#copyrightLink :last-child {
+    display: inline;
   }
   
   footer:hover a#copyrightLink :first-child{
     display: none;
   }
   
-  footer:hover a#copyrightLink :last-child {
-    display: inline;
-  }
-
   @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
