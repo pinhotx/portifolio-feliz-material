@@ -5,14 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
 
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-   
+
     <!-- Materialize CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    
+
     <!-- CSS -->
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/custom.css">
@@ -100,18 +99,18 @@
                 </div>
 
                 <div class="carousel-item white-text" href="#presentation">
-                    <h1 id="nickname" class="title text-uppercase">Pinho<em
+                    <h1 id="nickName" class="title text-uppercase">Pinho<em
                             class="font100 purple-text text-darken-3">tx</em>
                     </h1>
-                    <h2 class="subtitle font100 white-text">Front-end Developer/UX Designer</h2>
+                    <h2 id="occupation" class="subtitle font100 white-text">Front-end Developer/UX Designer</h2>
                     <a id="bannerNextSlideButton" class="btn-floating btn-flat purple-hover" href="#"
                         onclick="setSlide()"><i class="bigger-on-hover material-icons">arrow_right</i></a>
                 </div>
 
                 <div class="carousel-item white-text" href="#more-info">
-                    <h1 id="nickname" class="title text-uppercase">Tiago Silveira<em
+                    <h1 id="realName" class="title text-uppercase">Tiago Silveira<em
                             class="font100 purple-text text-darken-3"></em></h1>
-                    <h2 id="fullName" class="subtitle font100">IFSP TAE - Técnico de Laboratório/Área: Informática</h2>
+                    <h2 id="cargo" class="subtitle font100">IFSP TAE - Técnico de Laboratório/Área: Informática</h2>
                     <p class="white-text hide-on-med-and-down"> Instituto Federal de Educação, Ciência e Tecnologia de
                         São Paulo (IFSP) <br /> Campus
                         Pirituba - São Paulo-SP</p>
@@ -221,14 +220,35 @@
 
         <!-- Seção Contato -->
         <section id="contact" class="teal white-text">
-            <div class="container">
+            <div class="container ">
                 <h5>Contato</h5>
-                <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis alias soluta
-                    similique deleniti esse
-                    qui
-                    placeat incidunt? Corrupti necessitatibus cumque suscipit officia quod distinctio, fugiat error
-                    maxime
-                    inventore quia facilis.</p>
+                <div class="row white">
+                    <form class="col s12 l6">
+                        <div class="input-field">
+                            <input id="fullName" type="text" class="validate">
+                            <label for="fullName">Nome Completo</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="subject" type="text" class="validate">
+                            <label for="subject">Assunto</label>
+                        </div>
+                        <div class="input-field">
+                            <textarea id="message" class="materialize-textarea"></textarea>
+                            <label for="message">Mensagem</label>
+                        </div>
+                    </form>
+                    <div id="map" class="col s12 l6">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3707.1131197065724!2d-49.75280042554414!3d-21.698331280123835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94be15ecb135a5dd%3A0x66b807178c781125!2sFATEC%20Lins!5e0!3m2!1spt-BR!2sbr!4v1695035373557!5m2!1spt-BR!2sbr"
+                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- FIM Seção Contato -->
@@ -236,7 +256,10 @@
 
     <!-- Rodapé -->
     <footer class="center">
-        Ropycight (r) 2320 Fortpólio de Melipe Faciel
+        Copyright (c) 2023 <a id="copyrightLink" href="http://github.com/pinhotx" target="_blank" rel="noopener noreferrer">
+            <span class="pink-text text-accent-2">Pinhotx</span>
+            <span class="purple-text text-darken-3">Tiago Silveira</span>
+        </a>
     </footer>
     <!-- Fim Rodapé -->
 

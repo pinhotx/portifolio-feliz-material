@@ -6,8 +6,17 @@
     font-weight: 400;
 }
 
+.purple-hover{
+    transition: background-color 0.5s ease;
+}
+
+.text-purple-hover{
+    transition: color 0.5s ease;
+}
+
 .purple-hover:hover{
     background-color: var(--main-purple);
+
 }
 .text-purple-hover:hover{
     color: var(--main-purple);
@@ -52,3 +61,21 @@ ul#nav-dropdown.dropdown-content{
     right: 1rem;
     position: relative;
 }
+
+footer a#copyrightLink :nth-child(2){
+    display: none;
+    animation: fadeIn 0.5s ease;
+  }
+  
+  footer:hover a#copyrightLink :first-child{
+    display: none;
+  }
+  
+  footer:hover a#copyrightLink :last-child {
+    display: inline;
+  }
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
