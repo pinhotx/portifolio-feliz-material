@@ -5,18 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
 
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/custom.css">
 
+    <title>Portfolio</title>
 </head>
 
 <body>
-
+    <!-- Cabeçalho -->
     <header>
-
+        <!-- NavBar -->
         <div class="navbar-fixed">
             <nav>
                 <a href="#" data-target="slide-out" class="sidenav-trigger hide-on-med-and-up"><i
@@ -28,11 +35,29 @@
                         <li><a href="#experience">Experiência</a></li>
                         <li><a href="#portifolio">Portfolio</a></li>
                         <li><a href="#contact">Contato</a></li>
+                        <li>
+                            <a class="dropdown-trigger" href="#!" data-target="nav-dropdown"><i
+                                    class="material-icons right">more_vert</i></a>
+                        </li>
                     </ul>
                 </div>
             </nav>
-        </div>
+            <!-- Navigation Bar Dropdown -->
+            <ul id="nav-dropdown" class="pink accent-1 dropdown-content">
+                <li><a class="black-text" href="./clone-feliz/index.html"><i class="material-icons">coffee</i>Versão
+                        Maciel</a></li>
+                <li><a class="black-text" href="https://pinhotx.github.io/portifolio-feliz"><i
+                            class="material-icons">html</i>Primeira Versão</a></li>
+                <li class="divider"></li>
+                <li><a class="black-text" target="_blank" href="https://github.com/pinhotx/portifolio-feliz-material"><i
+                            class="material-icons">code</i> Código Fonte</a></li>
+            </ul>
+            <!-- FIM Navigation Bar Dropdown -->
 
+        </div>
+        <!-- FIM NavBar -->
+
+        <!-- SideBar -->
         <ul id="slide-out" class="purple darken-1 sidenav">
             <li><a class="white-text sidenav-close waves-effect" href="#aboutme">Sobre mim</a></li>
             <li>
@@ -54,10 +79,20 @@
             <li>
                 <div class="divider"></div>
             </li>
+            <li>
+                <a href="nav-dropdown" class="white-text sidenav-close waves-effect">Mais</a>
+            </li>
+            <li>
+                <div class="divider"></div>
+            </li>
         </ul>
+        <!-- FIM SideBar -->
 
     </header>
+    <!-- FIM Cabeçalho -->
+
     <main>
+        <!-- BANNER -->
         <section id="banner" class="black">
             <div class="carousel carousel-slider center">
                 <div class="carousel-fixed-item center">
@@ -65,22 +100,30 @@
                 </div>
 
                 <div class="carousel-item white-text" href="#presentation">
-                    <h1 id="nickname" class="title text-uppercase">Pinho<em class="font100 purple-text text-darken-3">tx</em>
+                    <h1 id="nickname" class="title text-uppercase">Pinho<em
+                            class="font100 purple-text text-darken-3">tx</em>
                     </h1>
-                    <p class="subtitle font100 white-text">TAE/Front-end Developer/UX Designer</p>
+                    <h2 class="subtitle font100 white-text">Front-end Developer/UX Designer</h2>
+                    <a id="bannerNextSlideButton" class="btn-floating btn-flat purple-hover" href="#"
+                        onclick="setSlide()"><i class="bigger-on-hover material-icons">arrow_right</i></a>
                 </div>
 
                 <div class="carousel-item white-text" href="#more-info">
                     <h1 id="nickname" class="title text-uppercase">Tiago Silveira<em
                             class="font100 purple-text text-darken-3"></em></h1>
-                    <h2 id="fullName" class="subtitle font100">Técnico de Laboratório/Área: Informática</h2>
-                    <p class="white-text"> <br/> Instituto Federal de Educação, Ciência e Tecnologia de São Paulo - Campus
-                        Pirituba (IFSP)</p>
+                    <h2 id="fullName" class="subtitle font100">IFSP TAE - Técnico de Laboratório/Área: Informática</h2>
+                    <p class="white-text hide-on-med-and-down"> Instituto Federal de Educação, Ciência e Tecnologia de
+                        São Paulo (IFSP) <br /> Campus
+                        Pirituba - São Paulo-SP</p>
+                    <a id="bannerPreviousSlideButton" class="btn-floating btn-flat purple-hover" href="#"
+                        onclick="setSlide('prev')"><i class="bigger-on-hover material-icons">arrow_left</i></a>
                 </div>
 
             </div>
         </section>
+        <!-- FIM Banner -->
 
+        <!-- Sobre Mim -->
         <section id="aboutme" class="grey lighten-5">
             <div class="container row">
                 <div class="col m4 hide-on-med-and-down">
@@ -101,7 +144,9 @@
                 </div>
             </div>
         </section>
+        <!-- FIM Sobre Mim -->
 
+        <!-- Seção Conhecimentos -->
         <section id="knowledge" class="container">
             <h5 class="teal-text">Conhecimentos</h5>
             <p class="text-justify">
@@ -123,7 +168,9 @@
                 <div class="determinate" style="width: 5%"></div>
             </div>
         </section>
+        <!-- Fim Seção Conhecimentos -->
 
+        <!-- Seção Experiência -->
         <section id="experience" class="teal white-text">
             <div class="container">
                 <h5>Experiência</h5>
@@ -149,7 +196,9 @@
             </div>
 
         </section>
+        <!-- FIM Seção Experiência -->
 
+        <!-- Seção Portifólio -->
         <section id="portifolio" class="container">
             <h5 class="text-justify">Portfólio</h5>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, provident, ipsa nostrum illo officia,
@@ -168,7 +217,9 @@
                 <div class="col s12 m6 l3"><img src="./assets/portofolio08.jpg" alt="" class="responsive-img"></div>
             </div>
         </section>
+        <!-- FIM Seção Portifólio -->
 
+        <!-- Seção Contato -->
         <section id="contact" class="teal white-text">
             <div class="container">
                 <h5>Contato</h5>
@@ -180,10 +231,16 @@
                     inventore quia facilis.</p>
             </div>
         </section>
+        <!-- FIM Seção Contato -->
     </main>
+
+    <!-- Rodapé -->
     <footer class="center">
         Ropycight (r) 2320 Fortpólio de Melipe Faciel
     </footer>
+    <!-- Fim Rodapé -->
+
+    <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
