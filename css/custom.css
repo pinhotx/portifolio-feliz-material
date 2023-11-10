@@ -9,21 +9,16 @@
 }
 
 .purple-hover:hover{
-    background-color: var(--main-purple);
+    background-color: var(--main-color);
 
 }
 .text-purple-hover:hover{
-    color: var(--main-purple);
-}
-
-h5.title{
-    text-transform: uppercase;
-    font-weight: 800;
+    color: var(--main-color);
 }
 
 /* NAVBAR */
 div.navbar-fixed nav::after{
-    border-bottom: 1.5vh solid var(--accent-pink);
+    border-bottom: 1.5vh solid var(--accent-color);
     content: '';
     display: block;
 }
@@ -69,11 +64,11 @@ section#banner .subtitle{
 
 /* KNOWLEDGE */
 .progress{
-    border: 0.1rem solid var(--accent-pink);
+    border: 0.1rem solid var(--accent-color);
   }
 
 .progress.expertise{
-    border: 0.2rem double var(--accent-pink);
+    border: 0.2rem double var(--accent-color);
 }
 
 /* FOOTER */
@@ -90,16 +85,16 @@ footer:hover a#copyrightLink :first-child{
     display: none;  
 }
 
-.tabs li.tab a.active.pink-text.text-accent-1{
-    color: var(--main-purple) !important;
+.tabs li.tab a.active{
+    color: var(--main-color) !important;
 }
 
 ul.tabs li.tab a.active:focus, ul.tabs li.tab a.active{
-    background-color: #f3e5f5 ;
+    background-color: var(--main-light-color);
 }
 
 ul.tabs .indicator{
-    background-color: var(--main-purple) !important;
+    background-color: var(--main-color) !important;
 }
 
 @keyframes fadeIn {

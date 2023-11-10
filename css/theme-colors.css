@@ -5,6 +5,8 @@
 */
 
 :root{
-  --main-purple: #6a1b9a;
+  --main-color: #6a1b9a;
+  --main-light-color: #f3e5f5;
+  --accent-color: #69f0ae;
   --accent-pink: #ff80ab;
 }
