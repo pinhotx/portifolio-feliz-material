@@ -32,6 +32,11 @@ section{
   font-weight: 100 !important; 
 }
 
+/* Mudar pra preto quando colocar o mouse sobre o footer*/
+footer:hover a#copyrightLink span.teal-text{
+  color: black !important;
+}
+
 p.text-justify{
   text-align: justify;
 }
