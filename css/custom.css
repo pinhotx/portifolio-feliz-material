@@ -16,15 +16,23 @@
     color: var(--main-purple);
 }
 
-section#banner .title{
-    font-size: 5rem;
-    margin-bottom: unset;
-}
-
+/* NAVBAR */
 div.navbar-fixed nav::after{
     border-bottom: 1.5vh solid var(--accent-pink);
     content: '';
     display: block;
+}
+
+ul#nav-dropdown.dropdown-content{
+    top: -4.3rem;
+    width: 15rem !important;
+    left: 0;
+}
+
+/* BANNER */
+section#banner .title{
+    font-size: 5rem;
+    margin-bottom: unset;
 }
 
 section#banner .subtitle{
@@ -45,12 +53,6 @@ section#banner .subtitle{
     font-size: 3.5rem;
 }
 
-ul#nav-dropdown.dropdown-content{
-    top: -4.3rem;
-    width: 15rem !important;
-    left: 0;
-}
-
 #bannerPreviousSlideButton i.bigger-on-hover.material-icons{
     right: 0;
 }
@@ -60,6 +62,16 @@ ul#nav-dropdown.dropdown-content{
     position: relative;
 }
 
+/* KNOWLEDGE */
+.progress{
+    border: 0.1rem solid var(--accent-pink);
+  }
+
+.progress.expertise{
+border: 0.2rem double var(--accent-pink);
+}
+
+/* FOOTER */
 footer a#copyrightLink :last-child{
     display: none;
     animation: fadeIn 0.5s ease;
@@ -78,10 +90,3 @@ footer a#copyrightLink :last-child{
     100% { opacity: 1; }
   }
 
-  .progress{
-    border: 0.1rem solid var(--accent-pink);
-  }
-
-  .progress.expertise{
-    border: 0.2rem double var(--accent-pink);
-  }
