@@ -7,7 +7,6 @@ section{
   padding: 64px;
 }
 
-
 /* SOMBRA */
 .grey-shadow-img{
   -webkit-box-shadow: 0 0 5px 2px #d1d1d1;
@@ -32,11 +31,6 @@ section{
   font-weight: 100 !important; 
 }
 
-/* Mudar pra preto quando colocar o mouse sobre o footer*/
-footer:hover a#copyrightLink span.teal-text{
-  color: black !important;
-}
-
 p.text-justify{
   text-align: justify;
 }
@@ -44,6 +38,13 @@ p.text-justify{
 h5.title{
   text-transform: uppercase;
   font-weight: 800;
+}
+
+/* Navbar DROPDOWN */
+ul#nav-dropdown.dropdown-content{
+  top: -4.3rem;
+  width: 15rem !important;
+  left: 0;
 }
 
 /* SOBRE MIM */
@@ -67,6 +68,13 @@ div.progress{
 
 section#contact .row {
   padding: 1rem;
+}
+
+/*FOOTER 
+* Mudar pra preto quando colocar o mouse sobre o footer
+*/
+footer:hover a#copyrightLink span.teal-text{
+  color: black !important;
 }
 
 
