@@ -16,6 +16,11 @@
     color: var(--main-purple);
 }
 
+h5.title{
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
 /* NAVBAR */
 div.navbar-fixed nav::after{
     border-bottom: 1.5vh solid var(--accent-pink);
