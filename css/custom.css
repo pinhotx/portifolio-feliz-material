@@ -1,10 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');
 @import './theme-colors.css';
-
-*{
-    font-family: 'Fira Sans', sans-serif;
-    font-weight: 400;
-}
 
 .purple-hover{
     transition: background-color 0.5s ease;
@@ -82,4 +76,12 @@ footer a#copyrightLink :last-child{
   @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
+  }
+
+  .progress{
+    border: 0.1rem solid var(--accent-pink);
+  }
+
+  .progress.expertise{
+    border: 0.2rem double var(--accent-pink);
   }
