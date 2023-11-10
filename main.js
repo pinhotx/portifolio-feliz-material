@@ -1,9 +1,7 @@
 $(function () {
   $('.sidenav').sidenav();
   $(".dropdown-trigger").dropdown();
-  $('.tabs').tabs({
-    swipeable: true
-  });
+  $('.tabs').tabs();
 
 });
 
