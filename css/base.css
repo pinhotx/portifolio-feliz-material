@@ -7,6 +7,23 @@ section{
   padding: 64px;
 }
 
+
+/* SOMBRA */
+.grey-shadow-img{
+  -webkit-box-shadow: 0 0 5px 2px #d1d1d1;
+  box-shadow: 0 0 5px 2px #d1d1d1;
+}
+
+.grey-shadow-img-on-hover{
+  transition: box-shadow, -webkit-box-shadow 0.2s ease;
+}
+
+.grey-shadow-img-on-hover:hover{
+  -webkit-box-shadow: 0 0 5px 2px #d1d1d1;
+  box-shadow: 0 0 5px 2px #d1d1d1;
+}
+
+/* TEXTO */
 .text-uppercase{
   text-transform: uppercase !important;
 }
@@ -15,23 +32,23 @@ section{
   font-weight: 100 !important; 
 }
 
-div.progress{
-  height: 16px;
-  /* height: 16px!important; */
-}
-
 p.text-justify{
   text-align: justify;
 }
 
+/* SOBRE MIM */
 div img#profile-picture.responsive-img{
-  -webkit-box-shadow: 0 0 5px 2px #d1d1d1;
-  box-shadow: 0 0 5px 2px #d1d1d1;
   border: 4px solid white;
 }
 
+/* CONHECIMENTOS */
+div.progress{
+  height: 16px;
+}
+
+/* CONTATO */
 .input-field #message {
-  height: 14rem;
+  height: 10rem;
 }
 
 .input-field input[type=email].invalid {
