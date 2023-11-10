@@ -68,25 +68,37 @@ section#banner .subtitle{
   }
 
 .progress.expertise{
-border: 0.2rem double var(--accent-pink);
+    border: 0.2rem double var(--accent-pink);
 }
 
 /* FOOTER */
 footer a#copyrightLink :last-child{
     display: none;
     animation: fadeIn 0.5s ease;
-  }
+}
 
-  footer:hover a#copyrightLink :last-child {
+footer:hover a#copyrightLink :last-child {
     display: inline;
-  }
-  
-  footer:hover a#copyrightLink :first-child{
-    display: none;
-  }
-  
-  @keyframes fadeIn {
+}
+
+footer:hover a#copyrightLink :first-child{
+    display: none;  
+}
+
+.tabs li.tab a.active.pink-text.text-accent-1{
+    color: var(--main-purple) !important;
+}
+
+ul.tabs li.tab a.active:focus, ul.tabs li.tab a.active{
+    background-color: #f3e5f5 ;
+}
+
+ul.tabs .indicator{
+    background-color: var(--main-purple) !important;
+}
+
+@keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
-  }
+}
 
